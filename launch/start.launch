@@ -1,0 +1,14 @@
+<launch>
+
+	<node pkg="hw" type="console.py" name="console" output="screen">
+	</node>
+
+	<node pkg="hw" type="main.py" name="main" output="screen">
+	</node>
+
+	<node pkg="hw" type="drive_action_server.py" name="drive_action_server" output="screen">
+	</node>
+
+	<node pkg="hw" type="npl_server.py" name="npl_server" output="screen">
+	</node>
+</launch>
