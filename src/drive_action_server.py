@@ -23,6 +23,7 @@ def drive(goal):
     pub.publish(twist)
 
     while time.time() < end_time:
+	pub.publish(twist)
         feedback = DriveFeedback()
         feedback.time_elapsed = rospy.Duration.from_sec(time.time() - start_time)
         feedback.time_remaining = rospy.Duration.from_sec(end_time -time.time())
